@@ -1,7 +1,32 @@
 import sqlite3
 from pathlib import Path
+import pandas as pd
 
-DB_PATH = Path(__file__).parent / "jp.db"
+DB_PATH = Path(__file__).parent.parent / "jp.db"
+RESOURCES_DIR = Path(__file__).parent.parent / "resources"
+
+
+
+def export_db():
+
+    conn = sqlite3.connect(DB_PATH)
+    grammar_sql = "SELECT title,usage,meaning,explanation,sentences,level FROM grammar"
+    grammar_file = "grammar.csv"
+    vocabulary_sql = "SELECT word,transliteration,meaning,sentences FROM vocabulary"
+    vocabulary_file = "vocabulary.csv"
+    df = pd.read_sql_query(
+        grammar_sql,
+        conn
+    )
+    CSV_FILE = RESOURCES_DIR / grammar_file
+    df.to_csv(
+        CSV_FILE,
+        index=False,
+        sep="|",
+        encoding="utf-8"
+    )
+
+    conn.close()
 
 
 def get_connection():
@@ -61,3 +86,4 @@ def insert_grammar(title, usage, meaning, explanation, sentences, level):
 
 
 
+export_db()
