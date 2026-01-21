@@ -10,9 +10,10 @@ RESOURCES_DIR = Path(__file__).parent.parent / "resources"
 def export_db():
 
     conn = sqlite3.connect(DB_PATH)
-    grammar_sql = "SELECT title,usage,meaning,explanation,sentences,level FROM grammar"
+    grammar_sql = '''
+    SELECT title,usage,meaning FROM grammar Where level in ('N5','N4','N3')'''
     grammar_file = "grammar.csv"
-    vocabulary_sql = "SELECT word,transliteration,meaning,sentences FROM vocabulary"
+    vocabulary_sql = "SELECT word,transliteration FROM vocabulary"
     vocabulary_file = "vocabulary.csv"
     df = pd.read_sql_query(
         grammar_sql,
