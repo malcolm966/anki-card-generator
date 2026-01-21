@@ -32,12 +32,12 @@ def extract_urls_from_index(html_path: str) -> list[dict]:
 
 
 def fetch_article_thumb(url: str) -> dict | None:
+    """
+    获取url的html内容，提取文法相关内容。
+    返回包含usage, meaning, explanation, sentences的字典。
+    """
     wanted = {"接続", "意味", "解説", "例文"}
-    eng = {"接続":"usage", "意味":"meaning", "解説":"explanation", "例文":"sentences"}
-    """
-    获取url的html内容，提取figure class="p-articleThumb"的内容
-    返回figure元素的完整HTML或图片URL
-    """
+    eng = {"接続": "usage", "意味": "meaning", "解説": "explanation", "例文": "sentences"}
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -59,8 +59,7 @@ def fetch_article_thumb(url: str) -> dict | None:
                     break
                 if sib.name == "p":
                     ps.append(sib.get_text(strip=True))
-
-                result[eng[title]] = "\n".join(ps)
+            result[eng[title]] = "\n".join(ps)
         # figure = soup.find("figure", class_="p-articleThumb")
 
         # if figure:
@@ -104,9 +103,8 @@ def main():
                         sentences=grammar['sentences'],
                         level=level)
             except Exception as e:
-                logger.exception(
-            f"插入语法失败 | title={title} | url={grammar_items[title]["url"]}"
-        )
+                url = grammar_items[title]["url"]
+                logger.exception(f"插入语法失败 | title={title} | url={url}")
 
 if __name__ == "__main__":
     main()
