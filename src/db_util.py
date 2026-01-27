@@ -84,6 +84,7 @@ def insert_grammar(title, usage, meaning, explanation, sentences, level):
             (title, usage, meaning, explanation, sentences, level)
         )
         conn.commit()
+        
 
 
 

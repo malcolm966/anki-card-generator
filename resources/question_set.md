@@ -1,0 +1,110 @@
+- Tell me about yourself and why you want to join Rakuten.
+- Describe your most challenging technical project.
+- Tell me about a time when you led a development team.
+- How do you handle disagreements with team members or managers?
+- Describe a time when you had to learn a new technology quickly.
+- Tell me about a time you optimized system performance significantly.
+- Describe a situation where requirements changed mid-project.
+- How do you ensure code quality in your projects?
+- Tell me about a time you had to debug a difficult production issue.
+- How do you stay updated with new technologies?
+- Describe a time when you had to work with ambiguous requirements.
+- Tell me about a time you mentored a junior engineer.
+- How do you handle tight deadlines and pressure?
+- Describe your experience working in cross-functional teams.
+- Tell me about a time you took initiative without being asked.
+- How do you approach system design?
+- Describe a situation where you had to make a trade-off between different technical approaches.
+- Tell me about a time you failed and how you recovered.
+- How do you communicate technical issues to non-technical stakeholders?
+- Describe your experience with Agile/Scrum methodologies.
+- Tell me about your experience with DevOps and CI/CD.
+- How do you ensure your code is maintainable and scalable?
+- Describe a time when you had to learn a business domain to implement a solution.
+- Tell me about your experience with API design.
+- How do you handle technical debt?
+- Describe your experience working in Japan.
+- Why do you want to leave your current company?
+- What are your career goals for the next 3-5 years?
+- How do you prioritize multiple competing tasks?
+- Do you have any questions for us?
+- Explain the four principles of Object-Oriented Programming with examples from your experience.
+- What are the differences between abstract classes and interfaces in Java? When would you use each?
+- Explain Java Collections Framework. What are the differences between List, Set, and Map?
+- Explain the difference between HashMap and ConcurrentHashMap. When would you use each?
+- What is the difference between `==` and `equals()` in Java?
+- Explain Java 8 Stream API and provide examples of how you've used it in your projects.
+- What are Java annotations? Explain custom annotations and provide examples.
+-  Explain Spring Boot auto-configuration. How does it work?
+- Explain dependency injection in Spring. What are the different types?
+-  What is @Transactional annotation? How does it work?
+- Explain Spring Bean scopes and lifecycle.
+- How does Spring Security work? Explain authentication and authorization.
+- What is Spring Data JPA? Explain repository interfaces.
+- Explain @RestController and @Controller differences.
+- What is Spring Boot Actuator? How do you use it?
+- What are Spring Profiles? How do you use them?
+- Explain Spring Boot exception handling with @ControllerAdvice.
+- What is Spring Boot Testing (@SpringBootTest, @WebMvcTest, @DataJpaTest, MockMvc)
+- What is Spring Boot Configuration Properties** (@ConfigurationProperties, validation)
+- What is Spring Boot DevTools** (Live reload, automatic restart)
+- Spring Boot with Docker** (Containerization, multi-stage builds)
+- Explain  Spring Cloud Basics** (Service discovery, config server, circuit breakers)
+- What are microservices? What are their advantages and disadvantages?
+- Explain service discovery. How does it work?
+- What is an API Gateway? Why is it important?
+- What is  Circuit Breaker Pattern (Resilience4j, fallback mechanisms)
+- What is Saga Pattern** (Distributed transactions, compensating transactions)
+- What is Event-Driven Architecture** (Asynchronous communication, eventual consistency)
+- What is Service Mesh** (Istio, sidecar pattern)
+- What is Microservices Security** (OAuth2, JWT, mTLS)
+- What is Microservices Monitoring** (Distributed tracing, Zipkin, Jaeger)
+- Database per Service** (Data isolation, challenges)
+- Explain ACID properties with examples.
+- What is database indexing? When should you use it?
+- SQL vs NoSQL** (When to use each, trade-offs)
+- Database Normalization** (1NF, 2NF, 3NF, denormalization)
+- Database Replication** (Master-slave, multi-master)
+- Database Sharding** (Horizontal partitioning, shard keys)
+- CAP Theorem** (Consistency, Availability, Partition tolerance)
+- Connection Pooling** (HikariCP configuration, best practices)
+- N+1 Query Problem** (Eager loading, batch fetching)
+- Database Transactions** (Optimistic vs pessimistic locking)
+- Design an e-commerce order management system.
+- Design a URL shortener** (Hash generation, collision handling)
+- Design a caching system** (Cache eviction, cache invalidation)
+- Design a rate limiter** (Token bucket, sliding window)
+- Design a notification system** (Push notifications, email, SMS)
+- Design a search engine** (Indexing, ranking, distributed search)
+- Design a real-time chat system** (WebSockets, message queuing)
+- Load balancing strategies** (Round-robin, least connections, consistent hashing)
+- Database schema design for e-commerce** (Products, orders, users, inventory)
+- Handling high-traffic scenarios** (Caching, CDN, database optimization)
+-  Explain Apache Kafka. How does it work?
+- Message Queues** (RabbitMQ vs Kafka, when to use each)
+- Distributed Transactions** (2-phase commit, saga pattern)
+- Eventual Consistency** (BASE vs ACID, conflict resolution)
+- Distributed Caching** (Redis cluster, cache coherence)
+- How do you optimize application performance?
+- Application Performance Monitoring** (SkyWalking, New Relic, Datadog)
+-  Database Query Optimization** (EXPLAIN, slow query log, query rewriting)
+- Memory Management** (Heap tuning, GC optimization, memory leaks)
+- Profiling Tools** (JProfiler, VisualVM, performance testing with JMeter)
+- Reverse a linked list (LeetCode 206)
+- Find two sum in array (LeetCode  1)
+- Implement LRU Cache (LeetCode 146)
+- Merge intervals (LeetCode 56)
+- Design HashMap
+- Implement rate limiter
+- Find longest substring without repeating characters (LeetCode 3)
+- Implement thread-safe singleton pattern
+- How do you design for observability and monitoring in a distributed microservices system?
+-  Describe your approach to handling data consistency in a distributed system. Give a specific example from your projects.
+- Describe the architecture design of your Order Service Performance Optimization project. Why did you choose Hazelcast over the existing Kafka + Caffeine solution?
+- Explain the design of your Prepaid Funds Management Platform. How did you ensure data consistency between payment and order states?
+- How did you design the Unified Logging & Data Analytics System architecture? Walk me through the data pipeline from log ingestion to real-time KPI dashboards.
+- In your PLM System for Oppo, why did you choose Activiti BPM workflow engine? How did you design the Bill of Materials (BOM) approval workflow?
+- Describe the Elasticsearch architecture you designed for the Manuscript Archive & Search System. How did you achieve <50ms latency with 100+ QPS?
+- How did you design the Personnel Management Platform to support 10M+ monthly active users with 1.9B page views? What were the key scalability decisions?
+- When designing a new project, how do you approach technology selection? Walk me through your decision-making process using a specific example.
+- Describe a situation where you had to re-architect an existing system. What was your migration strategy to minimize downtime and risk?
