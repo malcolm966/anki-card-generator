@@ -144,7 +144,7 @@ Nacos、MySQL、SkyWalkingなどの技術（ぎじゅつ）に精通（せいつ
 
 ### 🇬🇧 English Answer
 
-I am a backend developer with 6 years of experience. I focus on Java and Spring Boot microservices.
+I am a backend developer with 7 years of experience. I focus on Java and Spring Boot microservices.
 
 Now I work at Manka Corporation in Osaka, Japan. I design and build distributed systems there.
 
@@ -177,7 +177,7 @@ I know many tools like Nacos, MySQL, and SkyWalking. I want to join your company
 - "I want to join your company and [goal]."
 
 **4. Quick Recall Points**
-- WHO: Backend dev, 6 years, Java/Spring Boot
+- WHO: Backend dev, 7 years, Java/Spring Boot
 - WHERE: Manka Corporation, Osaka
 - WHAT: Distributed systems, microservices
 - ACHIEVEMENT: Redis + Kafka → 40% faster
